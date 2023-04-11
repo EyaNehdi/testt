@@ -50,7 +50,7 @@ include '../Model/Reclamation.php';
 $pc = new ReclamationC();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
-    $r = new Reclamation($_POST['idR'], $_POST['typeR'], $_POST['descriptionR']);
+    $r = new Reclamation($_POST['IdR'], $_POST['typeR'], $_POST['descriptionR']);
     
         $pc->addReclamation($r);
        // $pc->addcrud($c);

@@ -13,7 +13,7 @@ $liste = $pc->listReclamation();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanti</title>
+    <title>Afficher Reclamations</title>
 </head>
 <body>
     
@@ -34,7 +34,7 @@ $liste = $pc->listReclamation();
         <td><?= $p['idR']; ?></td> 
         <td><?= $p['typeR']; ?></td> 
         <td><?= $p['descriptionR']; ?></td>
-        <td><a href="delete.php?id=<?= $p['idR']; ?>">Delete</a> 
+        <td><a href="DeleteReclamation.php?idR=<?= $p['idR']; ?>">Delete</a> 
             <form action="update.php">
                 <input type="hidden" name='idR' value="<?= $p['idR'];?>">
                 <input type="submit" value="update"></form> 

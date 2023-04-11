@@ -3,13 +3,12 @@ include '../Controller/ReclamationC.php';
 
 $pc = new ReclamationC();
 
+$idR = $_GET['idR'];
+echo "ID to delete: " . $idR;
 
-    $id = $_GET['idR'];
-  
-        $pc->DeleteReclamation($idR);
+$pc->DeleteReclamation($idR);
+echo "Reclamation deleted successfully!";
 
-        header('Location:ListReclamation.php');
-        
-    
-  
+header('Location: ListReclamation.php');
+exit();
 ?>
